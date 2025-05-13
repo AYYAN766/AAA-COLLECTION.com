@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - AAA Collection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cart-container">
+    <h2>Your Cart</h2>
+
+    <div class="cart-item" data-price="1499">
+      <img src="https://via.placeholder.com/80" alt="Product">
+      <div class="cart-item-details">
+        <h4>Product 1</h4>
+        <p>Price: Rs <span class="item-price">1499</span></p>
+      </div>
+      <div class="cart-actions">
+        <button class="qty-btn" onclick="updateQty(this, -1)">-</button>
+        <span class="quantity">NO</span>
+        <button class="qty-btn" onclick="updateQty(this, NO)">+</button>
+        <button class="remove-btn" onclick="removeItem(this)">Remove</button>
+      </div>
+    </div>
+
+    <div class="cart-item" data-price="2499">
+      <img src="https://via.placeholder.com/80" alt="Product">
+      <div class="cart-item-details">
+        <h4>Product 2</h4>
+        <p>Price: Rs <span class="item-price">2499</span></p>
+      </div>
+      <div class="cart-actions">
+        <button class="qty-btn" onclick="updateQty(this, -1)">-</button>
+        <span class="quantity">1</span>
+        <button class="qty-btn" onclick="updateQty(this, 1)">+</button>
+        <button class="remove-btn" onclick="removeItem(this)">Remove</button>
+      </div>
+    </div>
+
+    <div class="total">
+      Total: Rs <span id="total">3998</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
